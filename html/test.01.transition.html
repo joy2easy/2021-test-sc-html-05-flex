@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underbar-transition</title>
+    <style>
+        .texts {
+            text-align: center;
+            display: inline-block;
+        }
+
+        /* .texts .underbar {
+            transition: 1s;
+            transform: scale(0);
+            height: 1px;
+            transform-origin: right;
+            background-color: #333;
+        } */
+
+        /* .underbar{transition: .5s; } */
+        /* .underbar{height: 5px; background-color: #332;} */
+        .texts:hover .underbar {
+            transition: 1s;
+            transform: scale(1);
+            transform-origin: left center;
+            height: 1px;
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="texts">uderbar
+        <div class="underbar"></div>
+    </div>
+</body>
+
+</html>
